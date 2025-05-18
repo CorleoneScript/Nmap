@@ -121,15 +121,5 @@ Licensed under the [MIT License](LICENSE).
 Pull requests and issues are welcome!
 If you find a bug or want to add features, feel free to open an issue or fork the project.
 
----
 
-## 🙌 Credits
 
-Made with 💻 and 🕵️ by [Your Name](https://github.com/your-username)
-
-```
-
----
-
-Let me know if you want me to generate a `README.md` file for download or include a project logo/banner!
-```
