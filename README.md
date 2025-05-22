@@ -11,7 +11,7 @@ A sophisticated and user-friendly **Python-based CLI tool** for automating advan
   \\ \  /;/                    /  ///
    \  \/_/____________________/    /
     `/                         \  /
-HZ  {  o              o  }'
+    {  o              o  }'
      \_________________________/
 ```
 
