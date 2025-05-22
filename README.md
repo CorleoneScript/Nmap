@@ -38,7 +38,7 @@ sudo apt install nmap
 brew install nmap
 
 # Clone the repository
-git clone https://github.com/RevShellX/swiss-army-knife-scanner.git
+git clone https://github.com/RevShellX/Nmap/main/nmap.py
 cd swiss-army-knife-scanner
 ```
 
