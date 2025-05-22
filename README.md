@@ -38,7 +38,7 @@ sudo apt install nmap
 brew install nmap
 
 # Clone the repository
-git clone https://github.com/yourusername/swiss-army-knife-scanner.git
+git clone https://github.com/RevShellX/swiss-army-knife-scanner.git
 cd swiss-army-knife-scanner
 ```
 
@@ -46,7 +46,7 @@ cd swiss-army-knife-scanner
 
 1. Launch the scanner with appropriate privileges:
    ```bash
-   python scanner.py
+   python nmap.py
    ```
 
 2. Follow the interactive menu:
