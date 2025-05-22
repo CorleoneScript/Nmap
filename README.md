@@ -1,125 +1,146 @@
-Here's a **professional and visually appealing `README.md`** for your GitHub project, enhanced with structure, styling, and relevant emojis to make it both professional and engaging:
+# 🔍 Swiss Army Knife Network Scanner
 
----
+A sophisticated and user-friendly **Python-based CLI tool** for automating advanced network scanning operations with real-time progress updates, colorful output, and automated result saving. Perfect for network administrators, security professionals, and system administrators.
 
-````markdown
-# 🔍 Advanced Nmap Scanning Suite
-
-A powerful and user-friendly **Python-based CLI tool** for automating advanced `nmap` scans with real-time progress updates, colorful output, and results saved to your Downloads folder. Perfect for pentesters, sysadmins, and network engineers.  
-   
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg) ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
----
+<div align="center">
+  <img src="banner.png" alt="Swiss Army Knife Scanner Banner">
+</div>
 
-## ✨ Features
+## ✨ Key Features
 
-- 🧠 **Intelligent Scan Selection** — Choose from 19 powerful scan types
-- 🎨 **Colorized Output** — Clear visual feedback for open, closed, and filtered ports
-- 📊 **Live Progress Tracker** — Real-time scan percentage, current port, elapsed time, and ETA
-- 💾 **Auto Save Results** — Export scan logs to your system’s Downloads folder
-- 🧰 **All-in-One Scan Suite** — Includes comprehensive script support for vuln/auth/brute/exploit scans
-- 🔐 **Root Check** — Ensures privileged scan types are executed with proper permissions
+- 🎯 **19 Specialized Scan Types** — From stealthy reconnaissance to comprehensive analysis
+- 🎨 **Intelligent Color Coding** — Visual distinction between open, filtered, and closed ports
+- 📊 **Dynamic Progress Tracking** — Real-time completion percentage, current port status, and time estimates
+- 💾 **Automated Result Management** — Systematic saving of scan results with timestamped filenames
+- 🛡️ **Comprehensive Security Suite** — Full support for vulnerability, authentication, and exploitation scripts
+- 🔄 **Cross-Platform Compatibility** — Works seamlessly on Windows, Linux, and macOS
 
----
+## 🛠️ Prerequisites & Installation
 
-## 🛠️ Installation
+### System Requirements:
+- Python 3.7 or higher
+- Nmap scanning utility
+- Administrative privileges for certain scan types
 
-Make sure you have **Nmap** and **Python 3.7+** installed.
-
-```bash
-# Install nmap
-sudo apt install nmap        # Debian/Ubuntu
-brew install nmap            # macOS (Homebrew)
-choco install nmap           # Windows (Chocolatey)
-
-# Clone this repository
-git clone https://github.com/your-username/nmap-scanner-suite.git
-cd nmap-scanner-suite
-
-# Run the script
-sudo python3 scanner.py
-````
-
----
-
-## 🚀 Usage
+### Installation Steps:
 
 ```bash
-sudo python3 scanner.py
+# Install Nmap based on your operating system
+# Windows (Using Chocolatey):
+choco install nmap
+
+# Linux (Debian/Ubuntu):
+sudo apt install nmap
+
+# macOS (Using Homebrew):
+brew install nmap
+
+# Clone the repository
+git clone https://github.com/yourusername/swiss-army-knife-scanner.git
+cd swiss-army-knife-scanner
 ```
 
-Follow the interactive prompts:
+## 🚀 Usage Guide
 
-* Enter a domain/IP address ✅
-* Choose a scan type (1–19) from the menu 🧪
-* View real-time progress with ETA and elapsed time ⏱️
-* Save results to your Downloads folder 📂
+1. Launch the scanner with appropriate privileges:
+   ```bash
+   python scanner.py
+   ```
 
----
+2. Follow the interactive menu:
+   - Enter target domain/IP
+   - Select from 19 specialized scan types
+   - Monitor real-time scan progress
+   - Optionally save results
 
-## 📚 Scan Types
+## 📚 Available Scan Types
 
-| Option | Scan Type             | Description                      |
-| ------ | --------------------- | -------------------------------- |
-| 1      | All                   | Full scan with all scripts       |
-| 2      | Stealth SYN           | Silent scan using `-sS`          |
-| 3      | TCP Connect           | Basic TCP handshake scan         |
-| 4      | UDP                   | Scan all UDP ports               |
-| 5      | Version Detection     | Identify services on ports       |
-| 6      | OS Detection          | Attempt OS fingerprinting        |
-| 7      | Comprehensive         | All detection methods together   |
-| 8      | Quick                 | Fast scan using `-F`             |
-| 9      | Intensive             | Aggressive & verbose scan        |
-| 10     | NULL                  | Send packets with no flags       |
-| 11     | FIN                   | Send FIN-flag packets            |
-| 12     | XMAS                  | Send all-flags packets           |
-| 13     | Ping                  | Check for host availability only |
-| 14     | Vulnerability Scripts | Run `vuln` scripts               |
-| 15     | Default Scripts       | Run `default` scripts            |
-| 16     | Auth Scripts          | Run `auth` scripts               |
-| 17     | Brute Scripts         | Run `brute` scripts              |
-| 18     | Exploit Scripts       | Run `exploit` scripts            |
-| 19     | Aggressive            | All aggressive scripts and scans |
+| ID | Type | Description | Parameters |
+|----|------|-------------|------------|
+| 1 | All-in-One | Comprehensive scan with all scripts | `-sS -sU -sV -O -A -p- --script default,vuln,auth,brute,exploit` |
+| 2 | Stealth SYN | Low-profile SYN scan | `-sS -p-` |
+| 3 | TCP Connect | Full TCP handshake | `-sT -p-` |
+| 4 | UDP | UDP port analysis | `-sU -p-` |
+| 5 | Version Detection | Service version identification | `-sV -p-` |
+| 6 | OS Detection | Operating system fingerprinting | `-O -p-` |
+| 7 | Comprehensive | Combined detection techniques | `-sS -sV -O -A -p-` |
+| 8 | Quick | Fast port analysis | `-F` |
+| 9 | Intensive | Detailed aggressive scan | `-T4 -A -v -p-` |
+| 10 | NULL | TCP NULL flag scan | `-sN -p-` |
+| 11 | FIN | TCP FIN flag scan | `-sF -p-` |
+| 12 | XMAS | TCP XMAS flag scan | `-sX -p-` |
+| 13 | Ping | Host discovery | `-sn` |
+| 14 | Vulnerability | NSE vulnerability assessment | `-sV --script vuln -p-` |
+| 15 | Default Scripts | Standard NSE scripts | `-sV --script default -p-` |
+| 16 | Authentication | Auth-related NSE scripts | `-sV --script auth -p-` |
+| 17 | Brute Force | Password brute forcing | `-sV --script brute -p-` |
+| 18 | Exploit | Exploitation scripts | `-sV --script exploit -p-` |
+| 19 | Aggressive | Full aggressive scan | `-T4 -A -v --script aggressive -p-` |
 
----
+## 📋 Sample Output
 
-## 📦 Output Example
+```plaintext
+╔════════════════════════════════════════════╗
+║        Advanced Nmap Scanning Suite        ║
+║    All-in-One Security Scanning Tool      ║
+╚════════════════════════════════════════════╝
 
-```text
-Progress: 34.50% (22678/65535 ports) | Current: 22678 | Elapsed: 76s | ETA 145s
-PORT      STATE    SERVICE
-22/tcp    open     ssh
-80/tcp    open     http
-443/tcp   filtered https
+Progress: 45.32% (29,692/65,535 ports) | Current: 29,692 | Elapsed: 127s | ETA: 153s
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+80/tcp   open     http
+443/tcp  open     https
+3306/tcp filtered mysql
 ```
 
----
+## 🔧 Technical Features
 
-## 🧑‍💻 Developer Notes
+- **Real-time Progress Tracking**
+  - Completion percentage
+  - Current port status
+  - Elapsed time monitoring
+  - Estimated time remaining
 
-* Tested on **Linux**, **macOS**, and **Windows (with WSL)**
-* Results are **colorized in terminal** and saved **without ANSI escape codes**
-* Requires root/admin privileges for most scan types
+- **Intelligent Color Coding**
+  - Green: Open ports
+  - Blue: Filtered ports
+  - Yellow: Closed ports
+  - Red: Errors/Warnings
 
----
+- **Automated Result Management**
+  - Timestamp-based file naming
+  - Organized storage in Downloads folder
+  - Clean output formatting
 
-## ⚠️ Disclaimer
+## ⚠️ Legal Disclaimer
 
-This tool is intended for **educational** and **authorized security testing** purposes only.
-**Do NOT** scan networks or systems without proper permission. Unauthorized scanning is illegal in many jurisdictions.
+This tool is provided for **authorized security testing and educational purposes only**. Users must:
+- Obtain explicit permission before scanning any networks or systems
+- Comply with all applicable local, state, and federal laws
+- Understand that unauthorized scanning may be illegal
 
----
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to:
+- Report bugs and issues
+- Suggest new features
+- Submit pull requests
+- Improve documentation
 
 ## 📄 License
 
-Licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- The Nmap Security Scanner team
+- Python community
+- All contributors and users
 
 ---
 
-## ❤️ Contributions
-
-Pull requests and issues are welcome!
-If you find a bug or want to add features, feel free to open an issue or fork the project.
-
+**Note**: Always ensure you have proper authorization before conducting any network scans. Unauthorized scanning can have serious legal consequences.
 
 
