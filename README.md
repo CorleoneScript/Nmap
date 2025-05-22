@@ -2,67 +2,18 @@
 
 A sophisticated and user-friendly **Python-based CLI tool** for automating advanced network scanning operations with real-time progress updates, colorful output, and automated result saving. Perfect for network administrators, security professionals, and system administrators.
 
-   xuu$``$$$uuu.
- . $``$  $$$`$$$
-dP*$  $  $$$ $$$
-?k $  $  $$$ $$$
- $ $  $  $$$ $$$
- ":$  $  $$$ $$$
-  N$  $  $$$ $$$
-  $$  $  $$$ $$$
-   $  $  $$$ $$$
-   $  $  $$$ $$$
-   $  $  $$$ $$$
-   $  $  $$$ $$$
-   $  $  $$$ $$$
-   $$#$  $$$ $$$
-   $$'$  $$$ $$$
-   $$`R  $$$ $$$
-   $$$&  $$$ $$$
-   $#*$  $$$ $$$
-   $  $  $$$ @$$
-   $  $  $$$ $$$
-   $  $  $$$ $$$
-   $  $  $B$ $$&.
-   $  $  $D$ $$$$$muL.
-   $  $  $Q$ $$$$$  `"**mu..
-   $  $  $R$ $$$$$    k  `$$*t
-   $  @  $$$ $$$$$    k   $$!4
-   $ x$uu@B8u$NB@$uuuu6...$$X?
-   $ $(`RF`$`````R$ $$5`"""#"R
-   $ $" M$ $     $$ $$$      ?
-   $ $  ?$ $     T$ $$$      $
-   $ $F H$ $     M$ $$K      $  ..
-   $ $L $$ $     $$ $$R.     "d$$$$Ns.
-   $ $~ $$ $     N$ $$X      ."    "%2h
-   $ 4k f  $     *$ $$&      R       "iN
-   $ $$ %uz!     tuuR$$:     Buu      ?`:
-   $ $F          $??$8B      | '*Ned*$~L$
-   $ $k          $'@$$$      |$.suu+!' !$
-   $ ?N          $'$$@$      $*`      d:"
-   $ dL..........M.$&$$      5       d"P
- ..$.^"*I$RR*$C""??77*?      "nu...n*L*
-'$C"R   ``""!$*@#""` .uor    bu8BUU+!`
-'*@m@.       *d"     *$Rouxxd"```$
-     R*@mu.           "#$R *$    !
-     *%x. "*L               $     %.
-        "N  `%.      ...u.d!` ..ue$$$o..
-         @    ".    $*"""" .u$$$$$$$$$$$$beu...
-        8  .mL %  :R`     x$$$$$$$$$$$$$$$$$$$$$$$$$$WmeemeeWc
-       |$e!" "s:k 4      d$N"`"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
-       $$      "N @      $?$    F$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
-       $@       ^%Uu..   R#8buu$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
-                  ```""*u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
-                         #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
-                          "5$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
-                            `*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
-                              ^#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
-                                 "*$$$$$$$$$$$$$$$$$$$$$$$$$$>
-                                   `"*$$$$$$$$$$$$$$$$$$$$$$$>
-                                       ^!$$$$$$$$$$$$$$$$$$$$>
-                                           `"#+$$$$$$$$$$$$$$>
-                                                 ""**$$$$$$$$>
-                                                        ```
+```
+                                    .:^
+             ^                     /   :
+'`.        /;/                    /    /
+\  \      /;/                    /    /
+ \\ \    /;/                    /  ///
+  \\ \  /;/                    /  ///
+   \  \/_/____________________/    /
+    `/                         \  /
+HZ  {  o              o  }'
+     \_________________________/
+```
 
 <div align="center">
   <img src="banner.png" alt="Swiss Army Knife Scanner Banner">
@@ -98,8 +49,8 @@ sudo apt install nmap
 brew install nmap
 
 # Clone the repository
-git clone https://github.com/RevShellX/Nmap/blob/main/nmap.py
-cd nmap.py
+git clone https://github.com/RevShellX/Nmap.git
+cd Nmap
 ```
 
 ## 🚀 Usage Guide
@@ -117,27 +68,27 @@ cd nmap.py
 
 ## 📚 Available Scan Types
 
-| ID | Type | Description | Parameters |
-|----|------|-------------|------------|
-| 1 | All-in-One | Comprehensive scan with all scripts | `-sS -sU -sV -O -A -p- --script default,vuln,auth,brute,exploit` |
-| 2 | Stealth SYN | Low-profile SYN scan | `-sS -p-` |
-| 3 | TCP Connect | Full TCP handshake | `-sT -p-` |
-| 4 | UDP | UDP port analysis | `-sU -p-` |
-| 5 | Version Detection | Service version identification | `-sV -p-` |
-| 6 | OS Detection | Operating system fingerprinting | `-O -p-` |
-| 7 | Comprehensive | Combined detection techniques | `-sS -sV -O -A -p-` |
-| 8 | Quick | Fast port analysis | `-F` |
-| 9 | Intensive | Detailed aggressive scan | `-T4 -A -v -p-` |
-| 10 | NULL | TCP NULL flag scan | `-sN -p-` |
-| 11 | FIN | TCP FIN flag scan | `-sF -p-` |
-| 12 | XMAS | TCP XMAS flag scan | `-sX -p-` |
-| 13 | Ping | Host discovery | `-sn` |
-| 14 | Vulnerability | NSE vulnerability assessment | `-sV --script vuln -p-` |
-| 15 | Default Scripts | Standard NSE scripts | `-sV --script default -p-` |
-| 16 | Authentication | Auth-related NSE scripts | `-sV --script auth -p-` |
-| 17 | Brute Force | Password brute forcing | `-sV --script brute -p-` |
-| 18 | Exploit | Exploitation scripts | `-sV --script exploit -p-` |
-| 19 | Aggressive | Full aggressive scan | `-T4 -A -v --script aggressive -p-` |
+| ID | Type             | Description                       | Parameters                                              |
+|----|------------------|-----------------------------------|---------------------------------------------------------|
+| 1  | All-in-One       | Comprehensive scan with all scripts | `-sS -sU -sV -O -A -p- --script default,vuln,auth,brute,exploit` |
+| 2  | Stealth SYN      | Low-profile SYN scan              | `-sS -p-`                                               |
+| 3  | TCP Connect      | Full TCP handshake                | `-sT -p-`                                               |
+| 4  | UDP              | UDP port analysis                 | `-sU -p-`                                               |
+| 5  | Version Detection| Service version identification    | `-sV -p-`                                               |
+| 6  | OS Detection     | Operating system fingerprinting   | `-O -p-`                                                |
+| 7  | Comprehensive    | Combined detection techniques     | `-sS -sV -O -A -p-`                                     |
+| 8  | Quick            | Fast port analysis                | `-F`                                                    |
+| 9  | Intensive        | Detailed aggressive scan          | `-T4 -A -v -p-`                                         |
+| 10 | NULL             | TCP NULL flag scan                | `-sN -p-`                                               |
+| 11 | FIN              | TCP FIN flag scan                 | `-sF -p-`                                               |
+| 12 | XMAS             | TCP XMAS flag scan                | `-sX -p-`                                               |
+| 13 | Ping             | Host discovery                    | `-sn`                                                   |
+| 14 | Vulnerability    | NSE vulnerability assessment      | `-sV --script vuln -p-`                                 |
+| 15 | Default Scripts  | Standard NSE scripts              | `-sV --script default -p-`                              |
+| 16 | Authentication   | Auth-related NSE scripts          | `-sV --script auth -p-`                                 |
+| 17 | Brute Force      | Password brute forcing            | `-sV --script brute -p-`                                |
+| 18 | Exploit          | Exploitation scripts              | `-sV --script exploit -p-`                              |
+| 19 | Aggressive       | Full aggressive scan              | `-T4 -A -v --script aggressive -p-`                     |
 
 ## 📋 Sample Output
 
@@ -163,7 +114,7 @@ PORT     STATE    SERVICE
   - Elapsed time monitoring
   - Estimated time remaining
 
-- **Intelligent Color Coding**
+- **Intelligent Color Coding*
   - Green: Open ports
   - Blue: Filtered ports
   - Yellow: Closed ports
@@ -198,9 +149,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The Nmap Security Scanner team
 - Python community
 - All contributors and users
-
----
-
-**Note**: Always ensure you have proper authorization before conducting any network scans. Unauthorized scanning can have serious legal consequences.
-
 
