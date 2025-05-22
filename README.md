@@ -2,7 +2,67 @@
 
 A sophisticated and user-friendly **Python-based CLI tool** for automating advanced network scanning operations with real-time progress updates, colorful output, and automated result saving. Perfect for network administrators, security professionals, and system administrators.
 
-![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg) ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg)
+   xuu$``$$$uuu.
+ . $``$  $$$`$$$
+dP*$  $  $$$ $$$
+?k $  $  $$$ $$$
+ $ $  $  $$$ $$$
+ ":$  $  $$$ $$$
+  N$  $  $$$ $$$
+  $$  $  $$$ $$$
+   $  $  $$$ $$$
+   $  $  $$$ $$$
+   $  $  $$$ $$$
+   $  $  $$$ $$$
+   $  $  $$$ $$$
+   $$#$  $$$ $$$
+   $$'$  $$$ $$$
+   $$`R  $$$ $$$
+   $$$&  $$$ $$$
+   $#*$  $$$ $$$
+   $  $  $$$ @$$
+   $  $  $$$ $$$
+   $  $  $$$ $$$
+   $  $  $B$ $$&.
+   $  $  $D$ $$$$$muL.
+   $  $  $Q$ $$$$$  `"**mu..
+   $  $  $R$ $$$$$    k  `$$*t
+   $  @  $$$ $$$$$    k   $$!4
+   $ x$uu@B8u$NB@$uuuu6...$$X?
+   $ $(`RF`$`````R$ $$5`"""#"R
+   $ $" M$ $     $$ $$$      ?
+   $ $  ?$ $     T$ $$$      $
+   $ $F H$ $     M$ $$K      $  ..
+   $ $L $$ $     $$ $$R.     "d$$$$Ns.
+   $ $~ $$ $     N$ $$X      ."    "%2h
+   $ 4k f  $     *$ $$&      R       "iN
+   $ $$ %uz!     tuuR$$:     Buu      ?`:
+   $ $F          $??$8B      | '*Ned*$~L$
+   $ $k          $'@$$$      |$.suu+!' !$
+   $ ?N          $'$$@$      $*`      d:"
+   $ dL..........M.$&$$      5       d"P
+ ..$.^"*I$RR*$C""??77*?      "nu...n*L*
+'$C"R   ``""!$*@#""` .uor    bu8BUU+!`
+'*@m@.       *d"     *$Rouxxd"```$
+     R*@mu.           "#$R *$    !
+     *%x. "*L               $     %.
+        "N  `%.      ...u.d!` ..ue$$$o..
+         @    ".    $*"""" .u$$$$$$$$$$$$beu...
+        8  .mL %  :R`     x$$$$$$$$$$$$$$$$$$$$$$$$$$WmeemeeWc
+       |$e!" "s:k 4      d$N"`"#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
+       $$      "N @      $?$    F$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
+       $@       ^%Uu..   R#8buu$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
+                  ```""*u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
+                         #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
+                          "5$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
+                            `*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
+                              ^#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$>
+                                 "*$$$$$$$$$$$$$$$$$$$$$$$$$$>
+                                   `"*$$$$$$$$$$$$$$$$$$$$$$$>
+                                       ^!$$$$$$$$$$$$$$$$$$$$>
+                                           `"#+$$$$$$$$$$$$$$>
+                                                 ""**$$$$$$$$>
+                                                        ```
 
 <div align="center">
   <img src="banner.png" alt="Swiss Army Knife Scanner Banner">
