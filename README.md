@@ -15,9 +15,7 @@ HZ  {  o              o  }'
      \_________________________/
 ```
 
-<div align="center">
-  <img src="banner.png" alt="Swiss Army Knife Scanner Banner">
-</div>
+
 
 ## ✨ Key Features
 
